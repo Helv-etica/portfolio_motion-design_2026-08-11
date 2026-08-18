@@ -3,80 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Independent motion designer creating identities, title sequences, and moving systems.">
-  <meta name="theme-color" content="#f1f0eb">
-  <title>Maya Riedel — Motion Designer</title>
+  <meta name="description" content="Maya Riedel is an independent motion art director creating expressive 2D and 3D worlds for technology brands.">
+  <meta name="theme-color" content="#101010">
+  <title>Maya Riedel — Motion Art Director</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="loader" aria-hidden="true"><span>MR®</span><div class="loader-line"></div></div>
-  <div class="cursor" aria-hidden="true"><span>View</span></div>
+  <div class="boot" aria-hidden="true"><div class="boot-mark">MR<span>®</span></div><div class="boot-status"><span>Building visual world</span><b>000</b></div><div class="boot-progress"><i></i></div></div>
+  <div class="cursor" aria-hidden="true"><span>VIEW</span></div>
 
   <header class="nav">
     <a class="brand" href="#top" aria-label="Maya Riedel, home">MR<span>®</span></a>
-    <p class="availability"><i></i> Available for select projects · ’26</p>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
-    <nav aria-label="Main navigation">
-      <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
-    </nav>
+    <p class="nav-role">Motion art director<br>2D / 3D designer</p>
+    <p class="availability"><i></i> Available for projects · 2026</p>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#profile">Profile</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-kicker"><span>Independent creative</span><span>Berlin / Everywhere</span></div>
-      <h1 id="hero-title" class="hero-title" aria-label="Ideas in motion">
-        <span class="line"><span>IDEAS</span><b class="shape circle"></b></span>
-        <span class="line indent"><span>IN</span><b class="shape square"></b></span>
-        <span class="line"><span>MOTION</span><b class="shape dot"></b></span>
+      <canvas id="signal-canvas" aria-hidden="true"></canvas>
+      <div class="hero-index mono"><span>Independent practice</span><span>Berlin → Worldwide</span></div>
+      <h1 id="hero-title" class="hero-title" aria-label="Motion for the next now">
+        <span class="hero-line"><span>MOTION</span><b class="hero-chip chip-red">2D</b></span>
+        <span class="hero-line hero-indent"><span>FOR THE</span></span>
+        <span class="hero-line"><span>NEXT</span><b class="hero-chip chip-blue">3D</b><em>NOW</em></span>
       </h1>
-      <div class="hero-foot">
-        <p>I turn clear ideas into moving identities, films, and digital experiences that refuse to sit still.</p>
-        <a class="round-link magnetic" href="#work" aria-label="Explore selected work"><span>Explore<br>work ↘</span></a>
+      <div class="hero-bottom">
+        <p class="hero-intro">I create high-energy motion systems, launch films and digital worlds for ideas shaping tomorrow.</p>
+        <button class="reel-trigger magnetic" type="button" data-open-reel aria-label="Play Maya Riedel's motion reel"><span>Play reel</span><b>00:18</b><i>▶</i></button>
       </div>
+      <div class="scroll-cue mono">Scroll to enter <span>↓</span></div>
     </section>
 
-    <section class="marquee" aria-label="Services">
-      <div class="marquee-track"><span>ART DIRECTION ✳ MOTION DESIGN ✳ 3D & CGI ✳ TITLE DESIGN ✳ </span><span aria-hidden="true">ART DIRECTION ✳ MOTION DESIGN ✳ 3D & CGI ✳ TITLE DESIGN ✳ </span></div>
-    </section>
+    <section class="ticker" aria-label="Capabilities"><div class="ticker-track"><span>ART DIRECTION <b>✳</b> 3D / CGI <b>✳</b> MOTION SYSTEMS <b>✳</b> 2D ANIMATION <b>✳</b> TECH FILMS <b>✳</b></span><span aria-hidden="true">ART DIRECTION <b>✳</b> 3D / CGI <b>✳</b> MOTION SYSTEMS <b>✳</b> 2D ANIMATION <b>✳</b> TECH FILMS <b>✳</b></span></div></section>
 
     <section class="work" id="work" aria-labelledby="work-title">
-      <div class="section-head reveal"><p>01 / Selected work</p><h2 id="work-title">A few things<br>made to move.</h2><span>2023—26</span></div>
-      <div class="project-list">
-        <article class="project reveal project-red" tabindex="0">
-          <div class="project-visual visual-kinetic"><div class="kinetic-type">KINETIC<br>TYPE</div><div class="orbit"></div></div>
-          <div class="project-meta"><h3>Neue Frequenz</h3><p>Brand motion system · 2026</p><span>01</span></div>
+      <header class="section-head reveal"><p class="eyebrow mono">01 / Selected experiments</p><h2 id="work-title">Imagined futures.<br><em>Precisely</em> in motion.</h2><p class="section-note">Self-initiated concepts<br>2025—2026</p></header>
+      <div class="projects">
+        <article class="project project-red reveal" data-cursor="EXPLORE">
+          <button class="project-open" type="button" data-project="01" aria-label="Explore Neural Shift project">
+            <div class="project-stage neural-stage" aria-hidden="true">
+              <div class="stage-ui top"><span>NS / GENERATIVE CORE</span><span>LIVE 98.7%</span></div>
+              <div class="neural-orb"><i class="orb-core"></i><i class="orb-ring ring-a"></i><i class="orb-ring ring-b"></i><i class="orb-ring ring-c"></i></div>
+              <div class="neural-word"><span>NEURAL</span><span>SHIFT</span></div>
+              <div class="stage-ui bottom"><span>INTELLIGENCE, AMPLIFIED</span><span>001—096</span></div>
+            </div>
+            <div class="project-info"><div><span class="mono">01 / AI platform</span><h3>Neural Shift</h3></div><p>Identity system · Launch film · 3D direction</p><b>2026 ↗</b></div>
+          </button>
         </article>
-        <article class="project reveal project-blue" tabindex="0">
-          <div class="project-visual visual-forms"><div class="form f1"></div><div class="form f2"></div><div class="form f3"></div><p>FORM<br>FOLLOWS<br>FEELING</p></div>
-          <div class="project-meta"><h3>Common Ground</h3><p>Campaign & film · 2025</p><span>02</span></div>
+        <article class="project project-blue reveal" data-cursor="EXPLORE">
+          <button class="project-open" type="button" data-project="02" aria-label="Explore Signal OS project">
+            <div class="project-stage signal-stage" aria-hidden="true">
+              <div class="stage-ui top"><span>SIGNAL/OS</span><span>SYNCING REALITIES</span></div><div class="signal-grid"></div>
+              <div class="signal-cube cube-one"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="signal-cube cube-two"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="signal-title">SIGNAL<span>/OS</span></div><div class="stage-ui bottom"><span>SPATIAL COMPUTING</span><span>BUILD 04.26</span></div>
+            </div>
+            <div class="project-info"><div><span class="mono">02 / Spatial computing</span><h3>Signal / OS</h3></div><p>Product film · Motion language · CGI</p><b>2026 ↗</b></div>
+          </button>
         </article>
-        <article class="project reveal project-yellow" tabindex="0">
-          <div class="project-visual visual-grid"><div class="grid-ball"></div><div class="grid-title">AFTER<br>IMAGE</div></div>
-          <div class="project-meta"><h3>Afterimage</h3><p>Title sequence · 2024</p><span>03</span></div>
+        <article class="project project-yellow reveal" data-cursor="EXPLORE">
+          <button class="project-open" type="button" data-project="03" aria-label="Explore Flux Network project">
+            <div class="project-stage flux-stage" aria-hidden="true">
+              <div class="stage-ui top"><span>FLUX NETWORK</span><span>DATA IN MOTION</span></div><div class="flux-sphere"><span></span></div>
+              <div class="flux-type"><span>F</span><span>L</span><span>U</span><span>X</span></div><div class="flux-data mono"><b>68.04</b><i></i><b>24.91</b><i></i><b>96.28</b></div>
+              <div class="stage-ui bottom"><span>DECENTRALIZE EVERYTHING</span><span>NODE 038</span></div>
+            </div>
+            <div class="project-info"><div><span class="mono">03 / Digital infrastructure</span><h3>Flux Network</h3></div><p>Brand world · Kinetic type · 2D motion</p><b>2025 ↗</b></div>
+          </button>
         </article>
       </div>
     </section>
 
-    <section class="statement" aria-label="Design statement">
-      <div class="statement-mark reveal">✳</div>
-      <p class="statement-text reveal">Movement is more than decoration. It creates <em>rhythm, meaning,</em> and a reason to look twice.</p>
+    <section class="manifesto" aria-label="Design approach">
+      <div class="manifesto-orbit" aria-hidden="true"><span>IDEA</span><span>FORM</span><span>TIME</span></div>
+      <p class="manifesto-copy reveal">Technology can feel cold. I use <em>motion, rhythm</em> and bold visual systems to make it feel <strong>human.</strong></p>
+      <div class="manifesto-meta mono"><span>Strategy → System → Story</span><span>Designed to move at every scale</span></div>
     </section>
 
-    <section class="about" id="about" aria-labelledby="about-title">
-      <div class="about-label reveal"><p>02 / About</p><div class="spin-badge">PLAY<br>WITH<br>PURPOSE</div></div>
-      <div class="about-copy reveal">
-        <h2 id="about-title">Hello, I’m Maya.</h2>
-        <p>I’m an independent motion designer and art director building memorable visual worlds for cultural and forward-thinking brands.</p>
-        <div class="services"><span>Direction</span><span>Motion systems</span><span>CGI / 3D</span><span>Typography</span></div>
+    <section class="profile" id="profile" aria-labelledby="profile-title">
+      <header class="profile-title reveal"><p class="eyebrow mono">02 / Profile</p><h2 id="profile-title">Independent mind.<br>Connected thinking.</h2></header>
+      <div class="profile-grid">
+        <div class="profile-card portrait-card reveal" aria-label="Abstract portrait placeholder for Maya Riedel"><div class="portrait-shape"><span>MR</span></div><p class="mono">Maya Riedel / Motion art director</p></div>
+        <div class="bio reveal"><p class="bio-lead">I’m Maya, a freelance motion art director creating expressive 2D and 3D experiences for technology, culture and ambitious new ideas.</p><p>My practice moves between concept, visual direction and animation—building worlds that are systematic enough to scale and strange enough to remember.</p><a class="text-link" href="#contact">Start a conversation <span>↘</span></a></div>
       </div>
+      <div class="capabilities reveal"><p class="eyebrow mono">Capabilities</p><ol>
+        <li><span>01</span><b>Creative & art direction</b><em>Concept / Story / Visual language</em></li><li><span>02</span><b>Motion systems</b><em>Identity / Type / Toolkits</em></li><li><span>03</span><b>2D animation</b><em>Films / Campaigns / Product</em></li><li><span>04</span><b>3D & CGI</b><em>Objects / Worlds / Experiments</em></li>
+      </ol></div>
+    </section>
+
+    <section class="process" aria-labelledby="process-title">
+      <div class="process-sticky reveal"><p class="eyebrow mono">03 / Process</p><h2 id="process-title">Built for clarity.<br>Made for impact.</h2></div>
+      <ol class="process-list"><li class="reveal"><span>01</span><div><h3>Decode</h3><p>Find the essential idea, audience and feeling behind the brief.</p></div></li><li class="reveal"><span>02</span><div><h3>Design</h3><p>Build a distinctive visual world through type, form, color and composition.</p></div></li><li class="reveal"><span>03</span><div><h3>Move</h3><p>Give the system rhythm, behavior and a motion language of its own.</p></div></li><li class="reveal"><span>04</span><div><h3>Deliver</h3><p>Shape flexible assets that stay powerful across screens and formats.</p></div></li></ol>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
-      <p class="reveal">Have something interesting in mind?</p>
-      <h2 id="contact-title" class="reveal">LET’S MAKE<br><a href="mailto:hello@mayariedel.design">IT MOVE.</a></h2>
-      <div class="contact-foot"><p>© 2026 Maya Riedel</p><div><a href="#">Instagram</a><a href="#">Vimeo</a><a href="#">LinkedIn</a></div><a href="#top">Back to top ↑</a></div>
+      <div class="contact-top"><p class="eyebrow mono">04 / Contact</p><p><i></i> Currently accepting selected freelance projects</p></div>
+      <h2 id="contact-title" class="reveal">HAVE A FUTURE<br>TO <a href="mailto:hello@mayariedel.design?subject=Project%20inquiry">VISUALIZE?</a></h2>
+      <div class="contact-actions reveal"><a class="primary-contact magnetic" href="mailto:hello@mayariedel.design?subject=Project%20inquiry"><span>Request a quotation</span><b>↗</b></a><a href="mailto:hello@mayariedel.design?subject=Collaboration%20idea"><span>Invite a collaboration</span><b>↗</b></a></div>
+      <footer><p>© 2026 Maya Riedel</p><div><a href="mailto:hello@mayariedel.design">Email</a><a href="#">Instagram</a><a href="#">Vimeo</a><a href="#">LinkedIn</a></div><a href="#top">Back to top ↑</a></footer>
     </section>
   </main>
+
+  <dialog class="reel" id="reel" aria-labelledby="reel-title">
+    <button class="dialog-close" type="button" data-close-reel aria-label="Close motion reel">Close ×</button><div class="reel-timeline"><i></i></div><h2 id="reel-title" class="sr-only">Maya Riedel motion reel</h2>
+    <div class="reel-scenes" aria-hidden="true"><div class="reel-scene reel-intro"><span>MAYA RIEDEL</span><b>MOTION / 2026</b></div><div class="reel-scene reel-neural"><i></i><span>THINK<br>BEYOND</span></div><div class="reel-scene reel-signal"><div></div><span>SIGNAL<br>FOUND</span></div><div class="reel-scene reel-flux"><i></i><span>MOVE THE<br>FUTURE</span></div><div class="reel-scene reel-outro"><span>MR®</span><b>AVAILABLE WORLDWIDE</b></div></div>
+    <div class="reel-label mono"><span>MR / SELECTED MOTION</span><span>00:18</span></div>
+  </dialog>
+
+  <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-title"><button class="dialog-close case-close" type="button" aria-label="Close project">Close ×</button><div class="case-hero" id="case-visual"></div><div class="case-content"><p class="eyebrow mono" id="case-index"></p><h2 id="case-title"></h2><p class="case-lead" id="case-lead"></p><div class="case-facts" id="case-facts"></div><p class="case-note mono">Self-initiated concept project / Created for portfolio exploration</p></div></dialog>
   <script src="script.js"></script>
 </body>
 </html>
